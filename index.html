@@ -1,39 +1,105 @@
-
-  <header>
-    <h1>江芸帆</h1>
-    <p>部落客｜口碑行銷｜鈎針小物品｜熱愛創造</p>
-  </header>
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>江芸帆的履歷</title>
+  <style>
+    body {
+      font-family: "Segoe UI", sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #00214;
+      color: #333;
+    }
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
+      gap: 30px;
+    }
+    .left, .right {
+      flex: 1 1 400px;
+      background-color: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    .profile {
+      text-align: center;
+    }
+    .profile img {
+      width: 120px;
+      border-radius: 50%;
+      margin-bottom: 10px;
+    }
+    .profile h1 {
+      margin: 10px 0 5px;
+      font-size: 24px;
+    }
+    .profile p.title {
+      font-weight: bold;
+      color: #555;
+      margin-bottom: 10px;
+    }
+    h2 {
+      color: #2d3436;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 5px;
+      margin-top: 20px;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    .skills span {
+      display: inline-block;
+      background-color: #dfe6e9;
+      padding: 6px 12px;
+      margin: 5px;
+      border-radius: 20px;
+      font-size: 14px;
+    }
+    a {
+      color: #0984e3;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
 
   <div class="container">
-    <!-- 左側：個人資訊與關於我 -->
+    <!-- 左側：個人資訊 -->
     <div class="left">
-      <div class="profile" style="text-align:center;">
-        <img src="https://github.com/chiangyunfan/chiangyunfan.github.io/blob/main/2.png" alt="江芸帆的照片">
+      <div class="profile">
+        <img src="江芸帆.jpg" alt="江芸帆的照片">
+        <h1>江芸帆</h1>
+        <p class="title">部落客｜口碑行銷｜鈎針小物品｜熱愛創造</p>
         <p>Email：chiangyunfan.cyf@gmail.com</p>
-        <p>
-          <a href="https://chiangyunfan.github.io/">GitHub</a> |
-          <a href="https://www.linkedin.com/in/%E8%8A%B8%E5%B8%86-%E6%B1%9F-285171383/">LinkedIn</a>
-        </p>
       </div>
-
-      <h2>關於我</h2>
-      <p>
-       我是江芸帆，畢業於國立臺北商業大學，曾在南山人壽、東森購物、扶輪社就職過，過往的工作都是在學習溝通技巧，目前增在轉職中。
-      </p>
     </div>
 
-    <!-- 右側：經歷、學歷、技能 -->
+    <!-- 右側：履歷內容 -->
     <div class="right">
+      <h2>關於我</h2>
+      <p>
+        我是江芸帆，畢業於國立臺北商業大學，曾在南山人壽、東森購物、扶輪社就職過，過往的工作都是在學習溝通技巧，目前增在轉職中。
+      </p>
+
       <h2>工作經歷</h2>
       <ul>
-        <li><strong>臺北市華樂扶輪社（2022-2025）</strong></li>
-        <li><strong>東森購物有限公司（2021-2022）</strong>（</li>
-        <li><strong>南山人壽有限公司（2019-2021）</strong></li>
+        <li><strong>臺北市華樂扶輪社</strong>（2022年 - 2025年）</li>
+        <li><strong>東森購物有限公司</strong>（2021年 - 2022年）</li>
+	<li><strong>南山人壽有限公司</strong>（2019年 - 2021年）</li>
       </ul>
 
       <h2>教育背景</h2>
       <ul>
-        <li>國立臺北商業大學 財務金融系(2016-2020)</li>
+        <li>國立臺北商業大學 財務金融系</li>
       </ul>
 
       <h2>技能與證照</h2>
@@ -61,4 +127,3 @@
 
 </body>
 </html>
-
