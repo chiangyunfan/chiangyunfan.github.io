@@ -3,93 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>江芸帆 - 個人履歷</title>
-    <style>
-        /* 基礎樣式設定 */
-        body {
-            font-family: '微軟正黑體', 'Microsoft JhengHei', sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-        .container {
-            width: 90%;
-            max-width: 1200px;
-            margin: 20px auto;
-            background-color: #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            display: flex; /* 使用Flexbox或Grid實現兩欄佈局 */
-        }
-        /* 標題與基礎排版 */
-        h1 { color: #333; border-bottom: 2px solid #ccc; padding-bottom: 5px; }
-        h2 { color: #555; margin-top: 20px; }
-        ul { list-style: disc; margin-left: 20px; padding-left: 0; }
-        
-        /* 兩欄佈局 (範例: 左欄-聯繫資訊/證照, 右欄-內容) */
-        .sidebar {
-            width: 30%;
-            background-color: #e6f7ff; /* 淺藍色背景 */
-            padding: 20px;
-        }
-        .main-content {
-            width: 70%;
-            padding: 20px;
-        }
-        
-        /* 經驗項目樣式 */
-        .experience-item, .activity-item {
-            margin-bottom: 15px;
-            border-left: 3px solid #007bff; /* 主題色強調 */
-            padding-left: 10px;
-        }
-        .experience-item h3 { margin: 0; }
-
-        /* 圖片容器 */
-        .photo-container {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-        .photo-container img {
-            width: 150px;
-            height: 200px;
-            object-fit: cover;
-            border-radius: 5px;
-        }
-    </style>
+    <title>江芸帆 - 個人履歷 Resume</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <div class="sidebar">
+    <div class="resume-container">
+        
+        <aside class="sidebar">
             <div class="photo-container">
-                            </div>
-
-            <h2>聯絡資訊 (CONTACT)</h2>
-            <ul>
-                <li>電話: 0937-801-462</li>
-                <li>信箱: lanblue124@gmail.</li>
+                <img src="https://via.placeholder.com/150x200?text=Your+Photo" alt="江芸帆照片">
+            </div>
+            
+            <h1 class="name">江芸帆</h1>
+            <h2 class="section-title">聯絡資訊 (CONTACT)</h2>
+            <ul class="contact-list">
+                <li><i class="icon-phone">📞</i> 0937-801-462</li>
+                <li><i class="icon-email">📧</i> lanblue124@gmail.</li>
             </ul>
 
-            <h2>證照 (LICENSE)</h2>
-            </div>
-
-        <div class="main-content">
-            <h1>江芸帆</h1>
-
-            <h2>自我介紹 (INTRODUCTION)</h2>
-            <p>畢業於台北商業大學財務金融系...（詳細內容請參考Markdown）</p>
-
-            <h2>自我評估 (SELF-ESTEEM)</h2>
-            <h2>工作經歷 (EXPERIENCE)</h2>
-            <div class="experience-item">
-                <h3>台北市華樂扶輪社 | 執行秘書 (2022-2025)</h3>
+            <h2 class="section-title">證照 (LICENSE)</h2>
+            <div class="license-group">
+                <h3>人工智慧/科技</h3>
                 <ul>
-                    <li>向上溝通: 透過清晰有邏輯的向上溝通...</li>
+                    <li>NVIDIA: 透過Jetson Nano開發人工智能應用</li>
+                    <li>NVIDIA: Building RAG Agents with LLMs</li>
+                </ul>
+                <h3>ESG/永續</h3>
+                <ul>
+                    <li>ESG: 永續發展基礎能力測驗</li>
+                </ul>
+                <h3>金融/保險</h3>
+                <ul>
+                    <li>證券商高級業務員</li>
+                    <li>人身保險業務員</li>
+                    <li>信託業業務人員信託業務專業測驗</li>
                     </ul>
             </div>
-            <h2>學歷 (EDUCATION)</h2>
-            <h2>活動參與 (ACTIVITY)</h2>
-            </div>
-    </div>
-</body>
-</html>
+        </aside>
+
+        <main class="main-content">
+            
+            <section class="section">
+                <h2>自我介紹 (INTRODUCTION)</h2>
+                <p>畢業於台北商業大學財務金融系，在學期間積極參與各類競賽，並擔任崇德青年社社長，培養卓越的溝通能力、團隊合作精神與自律思維。</p>
+                <p>進入職場後，持續精進人際互動與溝通技巧，並利用空閒時間自我進修，培養日語能力、網路行銷知識、數位資訊技能、永續發展知識及鉤針工藝等多元才藝。深信廣泛涉獵與持續學習能拓展視野，這些技能終將在未來發揮價值。</p>
+            </section>
+            
+            <section class="section">
+                <h2>工作經歷 (EXPERIENCE)</h2>
+                
+                <div class="job-item">
+                    <h3>台北市華樂扶輪社 | 執行秘書 (2022-2025)</h3>
+                    <ul>
+                        <li>**向上溝通**: 透過清晰有邏輯的向上溝通，讓老闆理解觀點，進而接受並採納建議
