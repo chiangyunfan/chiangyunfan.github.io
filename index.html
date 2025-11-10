@@ -1,185 +1,95 @@
 <!DOCTYPE html>
 <html lang="zh-Hant">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>江芸帆的履歷</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: "Segoe UI", sans-serif;
-      background-color: #f4f6f8;
-      color: #333;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>江芸帆 - 個人履歷</title>
+    <style>
+        /* 基礎樣式設定 */
+        body {
+            font-family: '微軟正黑體', 'Microsoft JhengHei', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 20px auto;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: flex; /* 使用Flexbox或Grid實現兩欄佈局 */
+        }
+        /* 標題與基礎排版 */
+        h1 { color: #333; border-bottom: 2px solid #ccc; padding-bottom: 5px; }
+        h2 { color: #555; margin-top: 20px; }
+        ul { list-style: disc; margin-left: 20px; padding-left: 0; }
+        
+        /* 兩欄佈局 (範例: 左欄-聯繫資訊/證照, 右欄-內容) */
+        .sidebar {
+            width: 30%;
+            background-color: #e6f7ff; /* 淺藍色背景 */
+            padding: 20px;
+        }
+        .main-content {
+            width: 70%;
+            padding: 20px;
+        }
+        
+        /* 經驗項目樣式 */
+        .experience-item, .activity-item {
+            margin-bottom: 15px;
+            border-left: 3px solid #007bff; /* 主題色強調 */
+            padding-left: 10px;
+        }
+        .experience-item h3 { margin: 0; }
 
-    .container {
-      display: flex;
-      flex-wrap: wrap;
-      min-height: 100vh;
-    }
-
-    .left {
-      background-color: #000214;
-      color: white;
-      flex: 1 1 300px;
-      padding: 30px 20px;
-    }
-
-    .left img {
-      width: 120px;
-      border-radius: 50%;
-      display: block;
-      margin: 0 auto 15px;
-    }
-
-    .left h1 {
-      text-align: center;
-      font-size: 24px;
-      margin-bottom: 10px;
-    }
-
-    .left p {
-      text-align: center;
-      line-height: 1.6;
-      margin: 8px 0;
-    }
-
-    .cert-section {
-      margin-top: 30px;
-    }
-
-    .cert-section h3 {
-      margin-top: 20px;
-      font-size: 16px;
-      border-bottom: 1px solid #555;
-      padding-bottom: 5px;
-    }
-
-    .cert-section ul {
-      padding-left: 20px;
-      margin: 10px 0;
-    }
-
-    .right {
-      flex: 2 1 600px;
-      padding: 40px 30px;
-      background-color: white;
-    }
-
-    .section {
-      margin-bottom: 40px;
-    }
-
-    .section h2 {
-      color: #000214;
-      border-bottom: 2px solid #ddd;
-      padding-bottom: 5px;
-      margin-bottom: 15px;
-    }
-
-    .section ul {
-      padding-left: 20px;
-    }
-
-    .section p {
-      line-height: 1.6;
-    }
-  </style>
+        /* 圖片容器 */
+        .photo-container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .photo-container img {
+            width: 150px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+    </style>
 </head>
 <body>
+    <div class="container">
+        <div class="sidebar">
+            <div class="photo-container">
+                            </div>
 
-  <div class="container">
-    <!-- 左側區塊 -->
-    <div class="left">
-      <img src="2.png" alt="江芸帆的照片">
-      <h1>江芸帆</h1>
-      <p>部落客｜口碑行銷｜鈎針小物品｜熱愛創造</p>
-      <p>Email：chiangyunfan.cyf@gmail.com</p>
-      <p>
-      <a href="https://www.linkedin.com/in/%E8%8A%B8%E5%B8%86-%E6%B1%9F-285171383/" target="_blank">LinkedIN</a> |
-      <a href="https://github.com/chiangyunfan" target=" _blank">GitHub</a>|
-      <a href="https://www.instagram.com/nina_ascend928/" target=" _blank>Instagram</a>
-        LinkedIn｜GitHub｜Instagram</p>
+            <h2>聯絡資訊 (CONTACT)</h2>
+            <ul>
+                <li>電話: 0937-801-462</li>
+                <li>信箱: lanblue124@gmail.</li>
+            </ul>
 
-      <div class="cert-section">
-        <h2>證照</h2>
+            <h2>證照 (LICENSE)</h2>
+            </div>
 
-        <h3>ESG</h3>
-        <ul>
-          <li>永續發展基礎能力測驗</li>
-        </ul>
+        <div class="main-content">
+            <h1>江芸帆</h1>
 
-        <h3>財務會計</h3>
-        <ul>
-          <li>丙級會計事務技術士</li>
-          <li>乙級會計事務技術士</li>
-          <li>商教會會計能力測驗第一級</li>
-        </ul>
+            <h2>自我介紹 (INTRODUCTION)</h2>
+            <p>畢業於台北商業大學財務金融系...（詳細內容請參考Markdown）</p>
 
-        <h3>金融投顧</h3>
-        <ul>
-          <li>證券商業務員</li>
-          <li>證券商高級業務員</li>
-        </ul>
-
-        <h3>金融保險</h3>
-        <ul>
-          <li>信託業業務人員</li>
-          <li>人身保險業務員</li>
-          <li>產物保險業務員</li>
-          <li>投資型保險商品業務員</li>
-          <li>外幣收付之非投資型人身保險資格</li>
-        </ul>
-
-        <h3>其他</h3>
-        <ul>
-          <li>TQC Word2010進階班</li>
-          <li>TQC電腦會計專業級</li>
-          <li>TQC中文輸入進階級 50 words/min</li>
-          <li>TQC英文輸入進階級 50 words/min</li>
-        </ul>
-      </div>
+            <h2>自我評估 (SELF-ESTEEM)</h2>
+            <h2>工作經歷 (EXPERIENCE)</h2>
+            <div class="experience-item">
+                <h3>台北市華樂扶輪社 | 執行秘書 (2022-2025)</h3>
+                <ul>
+                    <li>向上溝通: 透過清晰有邏輯的向上溝通...</li>
+                    </ul>
+            </div>
+            <h2>學歷 (EDUCATION)</h2>
+            <h2>活動參與 (ACTIVITY)</h2>
+            </div>
     </div>
-
-    <!-- 右側區塊 -->
-    <div class="right">
-      <div class="section">
-        <h2>關於我</h2>
-        <p>
-          畢業於台北商業大學財務金融系，在學期間積極參與各類競賽，並擔任崇德青年社社長，培養卓越的溝通能力、團隊合作精神與自律思維。
-          進入職場後，持續精進人際互動與溝通技巧，並深感學習永無止境，
-          因此積極利用空閒時間自我進修，培養日語能力、網路行銷知識、數位資訊技能、永續發展知識及鉤針工藝等多元才藝。
-          深信廣泛涉獵與持續學習能拓展視野，這些技能終將在未來發揮價值。
-        </p>
-      </div>
-      
-     <div class="section">
-        <h2>自我評價</h2>
-        <ul>
-          <li>能清晰、準確地匯報工作進展，並根據上級的反饋及時調整工作</li>
-          <li>善於傾聽和表達，能與團隊成員有效溝通，共同解決問題</li>
-          <li>能清晰地傳達任務內容，及時給予同事反饋</li>
-          <li>能快速理解客戶需要，並提供專業的解決方案，贏得客戶信任</li>
-        </ul>
-      </div>
-      
-      <div class="section">
-        <h2>工作經驗</h2>
-        <ul>
-          <li>臺北市華樂扶輪社（2022–2025）</li>
-          <li>東森購物有限公司（2021–2022）</li>
-          <li>南山人壽有限公司（2019–2021）</li>
-        </ul>
-      </div>
-
-      <div class="section">
-        <h2>教育背景</h2>
-        <ul>
-          <li>國立臺北商業大學 財務金融系（2016–2020）</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-
 </body>
 </html>
